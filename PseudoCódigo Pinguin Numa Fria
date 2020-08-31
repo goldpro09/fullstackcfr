@@ -1,0 +1,23 @@
+INICIO JOGO
+	Levar o filho azul ao gelo
+	Levar a mãe  azul ao gelo
+	Mover o gelo à outra margem
+	Deixar a mãe azul nesta margem
+	Voltar com o gelo 
+	Levar o filho verde ao gelo
+	Mover o o gelo à outra mergem
+	Deixar o filho azul nesta margem
+	Voltar com o gelo
+	Levar a mãe verde ao gelo
+	Mover o gelo à outra margem
+	Deixar a mãe verde nesta margem
+	Voltar com o gelo
+	Levar o filho vermelho ao gelo
+	Mover o gelo à outra margem
+	Deixar o filho verde nesta margem
+	Voltar com o gelo
+	Levar a mãe vermelha ao gelo
+	Mover com o gelo à outra margem
+	Deixar a mãe vermelha nesta margem
+	Deixar o filho vermelho nesta margem]
+FIM JOGO
