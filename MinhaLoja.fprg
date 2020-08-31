@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Silvana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-31 08:41:42 "/>
+        <attribute name="created" value="U2lsdmFuYTtERUxMLUU1NDQwOzIwMjAtMDgtMzE7IjA3OjMxOjA1ICI7MjUxMw=="/>
+        <attribute name="edited" value="U2lsdmFuYTtERUxMLUU1NDQwOzIwMjAtMDgtMzE7IjA4OjQxOjQyICI7NTsyNjI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Janeiro, Fevereiro, Abril, Marco, Media" type="Real" array="False" size=""/>
+            <declare name="escolhaContinuar" type="String" array="False" size=""/>
+            <output expression="&quot;Digite as suas vendas em: (Quantidade em n&#250;meros!)&quot;" newline="True"/>
+            <output expression="&quot;Janeiro:&quot;" newline="True"/>
+            <input variable="Janeiro"/>
+            <output expression="&quot;Fevereiro:&quot;" newline="True"/>
+            <input variable="Fevereiro"/>
+            <output expression="&quot;Mar&#231;o:&quot;" newline="True"/>
+            <input variable="Marco"/>
+            <output expression="&quot;Abril:&quot;" newline="True"/>
+            <input variable="Abril"/>
+            <assign variable="Media" expression="(Janeiro + Fevereiro + Abril + Marco)/4"/>
+            <output expression="&quot;A sua media de vendas nesses 4 meses foi de: &quot; &amp; Media" newline="True"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns!! Voc&#234; receber&#225; um abono de 10%!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; receber&#225; um abono de apenas 3%&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Voc&#234; deseja continuar com a sua loja?&quot;" newline="True"/>
+            <input variable="escolhaContinuar"/>
+            <if expression="escolhaContinuar==&quot;Sim&quot;">
+                <then>
+                    <declare name="Maio, Junho, Julho, Agosto" type="Real" array="False" size=""/>
+                    <output expression="&quot;Ent&#227;o digite a suas vendas nos meses:&quot;" newline="True"/>
+                    <output expression="&quot;Maio&quot;" newline="True"/>
+                    <input variable="Maio"/>
+                    <output expression="&quot;Junho&quot;" newline="True"/>
+                    <input variable="Junho"/>
+                    <output expression="&quot;Julho:&quot;" newline="True"/>
+                    <input variable="Julho"/>
+                    <output expression="&quot;Agosto:&quot;" newline="True"/>
+                    <input variable="Agosto"/>
+                    <assign variable="Media" expression="(Maio+Junho+Julho+Agosto)/4"/>
+                    <output expression="&quot;A m&#233;dia de suas vendas foi de: &quot; &amp; Media" newline="True"/>
+                    <if expression="Media&gt;=5000">
+                        <then>
+                            <output expression="&quot;Parab&#233;ns!! Voc&#234; receber&#225; um abono de 10%!!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voc&#234; receber&#225; um abono de apenas 3%&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="escolhaContinuar == &quot;N&#227;o&quot;">
+                        <then/>
+                        <else>
+                            <output expression="&quot;Digite uma resposta v&#225;lida(Sim ou N&#227;o)&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                    <output expression="&quot;Voc&#234; fechou sua loja e est&#225; desempregado!!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
